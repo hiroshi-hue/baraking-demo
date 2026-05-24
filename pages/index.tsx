@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       </Head>
 
       <main className="max-w-2xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-center mb-8">バラキング</h1>
+        <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={80} height={80} className="object-contain rounded-full mx-auto mb-8" style={{ width: 80, height: 80 }} />
+        <h1 className="text-3xl font-bold text-center">バラキング</h1>
 
         <div className="bg-white rounded-2xl p-6 shadow-md mb-4">
           <h2 className="text-xl font-bold mb-4">地域のお店</h2>
@@ -57,6 +59,7 @@ export default function Home() {
               コミュニティに参加
             </a>
           </div>
+          <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={96} height={96} className="object-contain rounded-full ml-4 mt-4" style={{ width: 96, height: 96 }} />
         </div>
 
         <footer className="text-center text-sm text-gray-500 py-6 border-t border-gray-200">
