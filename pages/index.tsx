@@ -23,9 +23,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-baraking-orange rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">🦁</span>
-              </div>
+              <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={40} height={40} className="object-contain rounded-full border-2 border-baraking-orange" style={{ width: 40, height: 40 }} />
               <div>
                 <h1 className="text-lg font-bold text-gray-800">バラキング</h1>
                 <p className="text-xs text-gray-500">地域経済活性化プロジェクト</p>
@@ -44,6 +42,7 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Card */}
         <div className="bg-white rounded-3xl p-6 shadow-lg mb-6 border border-orange-100">
+          <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={80} height={80} className="object-contain rounded-full border-4 border-baraking-warm shadow-lg mb-4" style={{ width: 80, height: 80 }} />
           <div className="flex items-center space-x-4 mb-4">
             <div className="w-16 h-16 bg-baraking-warm rounded-full flex items-center justify-center">
               <span className="text-3xl">🏠</span>
@@ -104,9 +103,7 @@ export default function Home() {
 
             {/* Feature 4 */}
             <div className="bg-white rounded-2xl p-5 shadow-md border border-teal-100 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-3">
-                <span className="text-2xl">🦁</span>
-              </div>
+              <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={48} height={48} className="object-contain rounded-xl bg-white/50" style={{ width: 48, height: 48 }} />
               <h4 className="font-bold text-gray-800 mb-2">ライオンキャラクター</h4>
               <p className="text-sm text-gray-600">「バラ」の愛称を持つ親しみやすいライオンがご案内します。</p>
             </div>
@@ -158,9 +155,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-              <span className="text-5xl">🦁</span>
-            </div>
+            <Image src="/assets/lion-icon.png" alt="バラキャラクター" width={96} height={96} className="object-contain rounded-full ml-4" style={{ width: 96, height: 96 }} />
           </div>
         </div>
 
@@ -170,6 +165,15 @@ export default function Home() {
           <p className="mt-1">ICHICO と地域のお店をつなぐプラットフォーム</p>
         </footer>
       </main>
+    </div>
+  )
+}
+
+// Loading component using lion brand character
+export function Loading() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-baraking-warm">
+      <Image src="/assets/lion-icon.png" alt="バラローディング" width={48} height={48} className="object-contain animate-bounce" />
     </div>
   )
 }
