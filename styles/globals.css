@@ -13,9 +13,16 @@
 }
 
 body {
-  font-family: 'Hiragino Sans Neo', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', ' Osaka', 'PingFang SC', 'Meiryo', sans-serif;
+  font-family: 'Hiragino Mincho ProN', 'Hiragino Sans', 'Yu Mincho', 'Yu Gothic', 'Osaka', 'Meiryo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Import Google Fonts in CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* Smooth scrolling */
